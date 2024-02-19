@@ -1,0 +1,21 @@
+CREATE DATABASE IF NOT EXISTS webpost;
+
+USE webpost;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    correo VARCHAR(255) NOT NULL,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+
+
+CREATE TABLE IF NOT EXISTS posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL,
+    titulo VARCHAR(255) NOT NULL,
+    contenido TEXT,
+    fecha_de_publicacion DATE,
+    imagen VARCHAR(255)
+);
